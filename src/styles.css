@@ -1,0 +1,155 @@
+/* ------------------------------------------------------------------ *
+ * SalaViva — tema rosa & verde
+ * Verde = folha (ativo/disponível) · Rosa = flor (destaque/agendado)
+ * ------------------------------------------------------------------ */
+:root {
+  --sv-green-900: #1f5138;
+  --sv-green-700: #2e7d5b;
+  --sv-green-500: #47a37a;
+  --sv-green-100: #e3f2e9;
+  --sv-pink-700: #c94f83;
+  --sv-pink-500: #e86a9a;
+  --sv-pink-100: #fdeaf2;
+  --sv-cream: #fbf8f4;
+  --sv-ink: #23302a;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Nunito", system-ui, sans-serif;
+  background-color: var(--sv-cream);
+  color: var(--sv-ink);
+}
+
+h1, h2, h3, h4, h5, .display-font {
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.mono {
+  font-family: "DM Mono", ui-monospace, monospace;
+}
+
+.sv-title { color: var(--sv-green-900); }
+.sv-eyebrow { color: var(--sv-pink-700); letter-spacing: 0.14em; }
+.sv-icon-green { color: var(--sv-green-500); }
+.sv-icon-pink { color: var(--sv-pink-500); }
+
+/* Botões e acentos ---------------------------------------------------- */
+.btn-sv-green {
+  background-color: var(--sv-green-700);
+  border-color: var(--sv-green-700);
+  color: #fff;
+  font-weight: 700;
+}
+.btn-sv-green:hover,
+.btn-sv-green:focus {
+  background-color: var(--sv-green-900);
+  border-color: var(--sv-green-900);
+  color: #fff;
+}
+.btn-sv-pink {
+  background-color: var(--sv-pink-500);
+  border-color: var(--sv-pink-500);
+  color: #fff;
+  font-weight: 700;
+}
+.btn-sv-pink:hover,
+.btn-sv-pink:focus {
+  background-color: var(--sv-pink-700);
+  border-color: var(--sv-pink-700);
+  color: #fff;
+}
+.btn-outline-sv {
+  border-color: var(--sv-green-500);
+  color: var(--sv-green-700);
+  font-weight: 700;
+}
+.btn-outline-sv:hover {
+  background-color: var(--sv-green-100);
+  color: var(--sv-green-900);
+}
+
+/* Superfícies --------------------------------------------------------- */
+.sv-card {
+  background: #fff;
+  border: 1px solid #efe7dd;
+  border-radius: 1.1rem;
+  box-shadow: 0 1px 2px rgba(31, 81, 56, 0.04);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.sv-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(31, 81, 56, 0.1);
+}
+
+.sv-brand-dot {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  background: var(--sv-pink-500);
+  box-shadow: 0 0 0 4px var(--sv-pink-100);
+}
+
+.sv-navbar {
+  background: linear-gradient(120deg, var(--sv-green-900), var(--sv-green-700));
+}
+
+.sv-hero {
+  background:
+    radial-gradient(circle at 12% 20%, var(--sv-pink-100), transparent 45%),
+    radial-gradient(circle at 88% 12%, var(--sv-green-100), transparent 42%),
+    var(--sv-cream);
+}
+
+.sv-thead {
+  background: var(--sv-green-100);
+  color: var(--sv-green-900);
+}
+
+.sv-modal-content {
+  border-radius: 1.1rem;
+  border: none;
+}
+.sv-modal-header {
+  border-radius: 1.1rem 1.1rem 0 0;
+}
+
+/* Badges de status ---------------------------------------------------- */
+.sv-badge {
+  display: inline-block;
+  font-family: "DM Mono", monospace;
+  font-size: 0.72rem;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+}
+.sv-badge-manha {
+  background: var(--sv-green-100);
+  color: var(--sv-green-900);
+}
+.sv-badge-tarde {
+  background: #fdf3e2;
+  color: #a06a1c;
+}
+.sv-badge-noite {
+  background: var(--sv-pink-100);
+  color: var(--sv-pink-700);
+}
+
+.sv-kpi {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--sv-green-500);
+  box-shadow: 0 0 0 0.2rem rgba(71, 163, 122, 0.2);
+}

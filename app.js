@@ -2,6 +2,8 @@
 // app.js — lógica da aplicação SalaViva (JavaScript puro + Bootstrap) //
 // ------------------------------------------------------------------ //
 
+import { infraestrutura, agendamentosIniciais, TURNOS } from "./dados.js";
+
 // Estado da aplicação: começa com uma cópia dos agendamentos iniciais.
 let agendamentos = agendamentosIniciais.slice();
 
